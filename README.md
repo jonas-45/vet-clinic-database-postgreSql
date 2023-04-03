@@ -70,7 +70,7 @@ To get a local copy up and running, follow these steps.
 ```bash
 $ git clone https://github.com/jonas-45/vet-clinic-database-postgreSql.git
 $ cd vet-clinic-database-postgreSql
-``
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
