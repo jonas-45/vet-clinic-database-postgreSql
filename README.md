@@ -107,7 +107,8 @@ $ cd vet-clinic-database-postgreSql
 > Describe 1 - 3 features you will add to the project.
 
 - [ ] **Add the join sql query to select items from table**
-- [ ] **A the IN sql query statment**
+- [ ] **Add the IN sql query statment**
+- [ ] **Add the BETWEEN sql query statment**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
