@@ -11,11 +11,9 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -54,16 +52,6 @@
 - **[Find all animals that are neutered.]**
 - **[Find all animals not named Gabumon.]**
 - **[Find all animals with a weight between 10.4kg and 17.3kg]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Live demo.
-
-- <a href="#">[Coming soon]</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
