@@ -37,3 +37,7 @@ UPDATE animals SET weight_kg = weight_kg * (-1);
 ROLLBACK TO SP1;
 UPDATE animals SET weight_kg = weight_kg * (-1) WHERE weight_kg < 0;
 COMMIT;
+
+SELECT count(*) FROM animals /*How many animals are there */
+
+SELECT count(*) FROM animals WHERE escape_attempts = 0  /* How many animals have never tried to escape? */
