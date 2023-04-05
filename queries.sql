@@ -88,3 +88,8 @@ SELECT a.* FROM animals a JOIN species s ON a.species_id = s.id Join owners o ON
 SELECT a.* FROM animals a Join owners o ON a.owner_id = o.id WHERE
 	o.id IN (SELECT id FROM owners WHERE o.full_name = 'Dean Winchester') AND 
 	a.escape_attempts = 0
+
+/* Who owns the most animals? */
+SELECT count(*) as total, o.full_name as OwnerName FROM 
+	animals a JOIN owners o ON a.owner_id = o.id 
+	GROUP BY o.full_name ORDER BY total desc LIMIT 1
