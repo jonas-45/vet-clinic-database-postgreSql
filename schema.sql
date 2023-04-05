@@ -9,6 +9,8 @@ CREATE TABLE animals (
   weight_kg decimal(6,2)
 );
 
+
+/*Project day 3 */
 CREATE TABLE owners (
 	id SERIAL PRIMARY KEY,
 	full_name VARCHAR(50),
