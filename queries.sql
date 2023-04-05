@@ -83,3 +83,8 @@ SELECT count(*) as total, s.name as species
 SELECT a.* FROM animals a JOIN species s ON a.species_id = s.id Join owners o ON a.owner_id = o.id WHERE
 	s.id IN (SELECT id FROM species WHERE s.name = 'Digimon') AND 
 	o.id IN (SELECT id FROM owners WHERE o.full_name = 'Jennifer Orwell')
+
+/* List all animals owned by Dean Winchester that haven't tried to escape. */
+SELECT a.* FROM animals a Join owners o ON a.owner_id = o.id WHERE
+	o.id IN (SELECT id FROM owners WHERE o.full_name = 'Dean Winchester') AND 
+	a.escape_attempts = 0
