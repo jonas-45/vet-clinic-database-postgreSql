@@ -61,3 +61,9 @@ SELECT species, MIN(weight_kg) as minWeight, MAX(weight_kg) as maxWeight FROM an
 /* average number of escape attempts per animal type of those born between 1990 and 2000 */
 SELECT species, AVG(escape_attempts) as avgEscapes FROM animals WHERE date_part('year', date_of_birth) 
 BETWEEN 1990 AND 2000 GROUP BY species
+
+/*PROJECT DAY 3 */
+
+/* What animals belong to Melody Pond? */
+SELECT name as animal_name FROM animals a JOIN owners o on a.owner_id = o.id 
+	WHERE o.id IN (SELECT id FROM owners WHERE full_name = 'Melody Pond');
