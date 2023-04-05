@@ -74,3 +74,7 @@ SELECT a.name FROM animals a JOIN species s on a.species_id = s.id
 
 /* List all owners and their animals, remember to include those that don't own any animal. */
 SELECT o.full_name as owner, a.name as animal FROM animals a RIGHT JOIN owners o ON a.owner_id = o.id
+
+/* How many animals are there per species? */
+SELECT count(*) as total, s.name as species 
+  FROM animals a JOIN species s ON a.species_id = s.id GROUP BY s.name
