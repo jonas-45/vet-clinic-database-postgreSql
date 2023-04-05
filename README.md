@@ -52,6 +52,10 @@
 - **[Find all animals that are neutered.]**
 - **[Find all animals not named Gabumon.]**
 - **[Find all animals with a weight between 10.4kg and 17.3kg]**
+- **[Used aggregates such as MIN, MAX, COUNT in sql queries]**
+- **[Used sql query transactions]**
+- **[Used sql GROUP BY query attribute]**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
