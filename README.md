@@ -55,6 +55,7 @@
 - **[Used aggregates such as MIN, MAX, COUNT in sql queries]**
 - **[Used sql query transactions]**
 - **[Used sql GROUP BY query attribute]**
+- **[Used sql JOIN  query to fetch data]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -96,9 +97,9 @@ $ cd vet-clinic-database-postgreSql
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **Add the join sql query to select items from table**
-- [ ] **Add the IN sql query statment**
-- [ ] **Add the BETWEEN sql query statment**
+- [ ] **Use the sql UNION query to select data from tables**
+- [ ] **Add the sql DISTINCT query statment**
+- [ ] **Add the sql FETCH query statment**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
