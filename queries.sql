@@ -67,3 +67,7 @@ BETWEEN 1990 AND 2000 GROUP BY species
 /* What animals belong to Melody Pond? */
 SELECT name as animal_name FROM animals a JOIN owners o on a.owner_id = o.id 
 	WHERE o.id IN (SELECT id FROM owners WHERE full_name = 'Melody Pond');
+
+/* List of all animals that are pokemon (their type is Pokemon) */
+SELECT a.name FROM animals a JOIN species s on a.species_id = s.id 
+	WHERE s.id IN (SELECT id FROM species WHERE s.name = 'Pokemon');
