@@ -122,3 +122,8 @@ SELECT count(*) as total, o.full_name as OwnerName FROM
   /* Who was Maisy Smith's first visit? */
   SELECT a.name FROM animals a INNER JOIN visits v ON a.id = v.animal_id 
 	WHERE v.vet_id IN (SELECT id FROM vets WHERE name = 'Maisy Smith') ORDER BY v.date_of_visit ASC LIMIT 1
+
+  /* Details for most recent visit: animal information, vet information, and date of visit. */
+  SELECT a.id, a.name, a.date_of_birth, a.escape_attempts, a.neutered, a.weight_kg, v.name as vet_name,
+v.age as vet_age, v.date_of_graduation as vet_graduation_date, vs.date_of_visit FROM animals a INNER
+JOIN visits vs ON a.id = vs.animal_id INNER JOIN vets v ON vs.vet_id = v.id ORDER BY vs.date_of_visit DESC LIMIT 1
