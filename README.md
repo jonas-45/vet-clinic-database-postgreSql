@@ -56,6 +56,9 @@
 - **[Used sql query transactions]**
 - **[Used sql GROUP BY query attribute]**
 - **[Used sql JOIN  query to fetch data]**
+- **[Fetch data data from many-to-many relationship tables]**
+- **[Used primary key & foreign key mechanism for joining tables]**
+- **[Prepared complex queries that answer analytical questions]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
