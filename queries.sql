@@ -93,4 +93,11 @@ SELECT a.* FROM animals a Join owners o ON a.owner_id = o.id WHERE
 SELECT count(*) as total, o.full_name as OwnerName FROM 
 	animals a JOIN owners o ON a.owner_id = o.id 
 	GROUP BY o.full_name ORDER BY total desc LIMIT 1
-  
+
+
+  /* PROJECT DAY 4 */
+
+/*  Who was the last animal seen by William Tatcher? */
+  SELECT name FROM animals a JOIN visits v ON a.id = v.animal_id 
+	WHERE vet_id IN (SELECT id FROM vets WHERE name = 'William Tatcher') 
+	ORDER BY v.date_of_visit DESC LIMIT 1
