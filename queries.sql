@@ -101,3 +101,7 @@ SELECT count(*) as total, o.full_name as OwnerName FROM
   SELECT name FROM animals a JOIN visits v ON a.id = v.animal_id 
 	WHERE vet_id IN (SELECT id FROM vets WHERE name = 'William Tatcher') 
 	ORDER BY v.date_of_visit DESC LIMIT 1
+
+  /* How many different animals did Stephanie Mendez see? */
+  SELECT COUNT(*) FROM animals a INNER JOIN visits v ON a.id = v.animal_id 
+	WHERE vet_id IN (SELECT id FROM vets WHERE name = 'Stephanie Mendez')
