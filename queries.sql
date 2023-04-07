@@ -105,3 +105,7 @@ SELECT count(*) as total, o.full_name as OwnerName FROM
   /* How many different animals did Stephanie Mendez see? */
   SELECT COUNT(*) FROM animals a INNER JOIN visits v ON a.id = v.animal_id 
 	WHERE vet_id IN (SELECT id FROM vets WHERE name = 'Stephanie Mendez')
+
+  /* List all vets and their specialties, including vets with no specialties. */
+  SELECT v.name, sp.name FROM vets v LEFT JOIN specializations s 
+	ON v.id = s.vet_id  LEFT JOIN species sp ON sp.id = s.species_id
