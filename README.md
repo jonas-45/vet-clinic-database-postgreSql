@@ -1,7 +1,8 @@
 <a name="readme-top"></a>
 <div align="center">
 
-  <h3><b>Vet Clinic Database PostgreSQL</b></h3>
+ ![postgrelogo](https://user-images.githubusercontent.com/113814214/230617930-25d87710-2148-4c67-81b6-5082eddfafb9.png)
+ <h3><b>Vet Clinic Database PostgreSQL</b></h3>
 
 </div>
 
