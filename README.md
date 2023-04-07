@@ -67,9 +67,9 @@
 
 To get a local copy up and running, follow these steps.
 
-### Prerequisites
-
-- [ ] <a href="https://code.visualstudio.com/">Visual studio code</a>: A source code editor.
+### Prerequisites 
+- [ ] <a href="https://code.visualstudio.com/">Visual studio code</a>: A source code editor was used in writing the code but you can you any IDE of your choice.
+- [ ] You will need postgreSQL installed. Download PostgreSQL and install it from <a href="https://www.postgresql.org/download/">this link </a>
 
 ### Clone this repository
 
