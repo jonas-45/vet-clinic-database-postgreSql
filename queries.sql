@@ -118,3 +118,7 @@ SELECT count(*) as total, o.full_name as OwnerName FROM
   /* What animal has the most visits to vets? */
   SELECT a.name, COUNT(animal_id) as visits FROM animals a JOIN visits v 
 	ON a.id = v.animal_id GROUP BY a.name ORDER BY visits DESC LIMIT 1
+
+  /* Who was Maisy Smith's first visit? */
+  SELECT a.name FROM animals a INNER JOIN visits v ON a.id = v.animal_id 
+	WHERE v.vet_id IN (SELECT id FROM vets WHERE name = 'Maisy Smith') ORDER BY v.date_of_visit ASC LIMIT 1
