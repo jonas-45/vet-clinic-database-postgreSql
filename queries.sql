@@ -127,3 +127,12 @@ SELECT count(*) as total, o.full_name as OwnerName FROM
   SELECT a.id, a.name, a.date_of_birth, a.escape_attempts, a.neutered, a.weight_kg, v.name as vet_name,
 v.age as vet_age, v.date_of_graduation as vet_graduation_date, vs.date_of_visit FROM animals a INNER
 JOIN visits vs ON a.id = vs.animal_id INNER JOIN vets v ON vs.vet_id = v.id ORDER BY vs.date_of_visit DESC LIMIT 1
+
+/* How many visits were with a vet that did not specialize in that animal's species? */
+SELECT COUNT(*)
+FROM visits v
+JOIN animals a ON v.animal_id = a.id
+JOIN species s ON a.species_id = s.id
+JOIN vets vt ON v.vet_id = vt.id
+LEFT JOIN specializations sp ON vt.id = sp.vet_id AND s.id = sp.species_id
+WHERE sp.id IS NULL
