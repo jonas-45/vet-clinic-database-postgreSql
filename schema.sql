@@ -35,3 +35,7 @@ ALTER TABLE animals
     age int, 
     date_of_graduation date
   )
+
+CREATE TABLE spcializations(id SERIAL PRIMARY KEY, vet_id int, species_id int);
+
+  -- CREATE TABLE visits (id SERIAL PRIMARY KEY, animal_id int, vet_id int, date_of_visit date);
