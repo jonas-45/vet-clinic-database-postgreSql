@@ -109,3 +109,8 @@ SELECT count(*) as total, o.full_name as OwnerName FROM
   /* List all vets and their specialties, including vets with no specialties. */
   SELECT v.name, sp.name FROM vets v LEFT JOIN specializations s 
 	ON v.id = s.vet_id  LEFT JOIN species sp ON sp.id = s.species_id
+
+  /* List all animals that visited Stephanie Mendez between April 1st and August 30th, 2020. */
+  SELECT a.name FROM animals a INNER JOIN visits v ON a.id = v.animal_id 
+	WHERE v.vet_id IN (SELECT id FROM vets WHERE name = 'Stephanie Mendez') 
+	AND v.date_of_visit BETWEEN '2020-04-01' AND '2020-08-30'
