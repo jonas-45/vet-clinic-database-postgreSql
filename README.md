@@ -85,6 +85,10 @@ $ cd vet-clinic-database-postgreSql
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
+  **Divine Asiriuwa**
+
+- GitHub: [@Divinity-dev](https://github.com/Divinity-dev)
+- LinkedIn: [Divine Asiriuwa ](https://www.linkedin.com/in/divinity20/)
 
 👤 **Wullah Jonas Nuta**
 
