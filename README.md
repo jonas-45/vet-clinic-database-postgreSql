@@ -58,6 +58,7 @@
 - **[Fetch data data from many-to-many relationship tables]**
 - **[Used primary key & foreign key mechanism for joining tables]**
 - **[Prepared complex queries that answer analytical questions]**
+- **[Add table optimazations by creating indexes]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -84,6 +85,10 @@ $ cd vet-clinic-database-postgreSql
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
+  **Divine Asiriuwa**
+
+- GitHub: [@Divinity-dev](https://github.com/Divinity-dev)
+- LinkedIn: [Divine Asiriuwa ](https://www.linkedin.com/in/divinity20/)
 
 👤 **Wullah Jonas Nuta**
 
