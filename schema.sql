@@ -38,4 +38,7 @@ ALTER TABLE animals
 
 CREATE TABLE specializations(id SERIAL PRIMARY KEY, vet_id int, species_id int);
 
- CREATE TABLE visits (id SERIAL PRIMARY KEY, animal_id int, vet_id int, date_of_visit date);
+CREATE TABLE visits (id SERIAL PRIMARY KEY, animal_id int, vet_id int, date_of_visit date);
+
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
