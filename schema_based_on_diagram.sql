@@ -20,3 +20,11 @@ CREATE TABLE treatments(
   name VARCHAR(120)
 )
 
+CREATE TABLE invoices(
+  id INT PRIMARY KEY IDENTITY,
+  total_amount DECIMAL(6,2),
+  generated_at TIMESTAMP WITHOUT TIME ZONE,
+  payed_at TIMESTAMP WITHOUT TIME ZONE,
+  medical_history_id INT,
+  ADD CONSTRAINT fk_medical_history_id FOREIGN KEY (medical_history_id) REFERENCES medical_histories(id)
+)
