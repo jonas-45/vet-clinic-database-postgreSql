@@ -14,3 +14,9 @@ CREATE TABLE medical_histories(
   Add CONSTRAINT fk_patient_id FOREIGN KEY (patient_id) REFERENCES patients(id)
 )
 
+CREATE TABLE treatments(
+  id INT PRIMARY KEY IDENTITY,
+  type VARCHAR(10),
+  name VARCHAR(120)
+)
+
