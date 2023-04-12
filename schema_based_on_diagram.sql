@@ -28,3 +28,14 @@ CREATE TABLE invoices(
   medical_history_id INT,
   ADD CONSTRAINT fk_medical_history_id FOREIGN KEY (medical_history_id) REFERENCES medical_histories(id)
 )
+
+CREATE TABLE invoice_items(
+  id INT PRIMARY KEY IDENTITY,
+  unit_price DECIMAL(4,2),
+  quantity INT,
+  total_price DECIMAL(6,2),
+  invoice_id INT,
+  treatment_id INT,
+  ADD CONSTRAINT fk_invoice_id FOREIGN KEY (invoice_id) REFERENCES invoices(id),
+  ADD CONSTRAINT fk_treatment_id FOREIGN KEY (treatment_id) REFERENCES treatments(id)
+)
